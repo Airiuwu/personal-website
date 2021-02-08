@@ -1,0 +1,154 @@
+@font-face { font-family: Font; src: url('../font/font.ttf'); }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#clockDisplay {
+    position: relative;
+}
+
+body {
+  background: black;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+	font-family: Font;
+	font-size: 12.0vw;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1>a {
+    transition: color 0.5s ease;
+}
+
+.hidden_overlay {
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: fixed;
+}
+
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 110%;
+  min-height: 110%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  filter: blur(10px);
+}
+
+.wrap {
+  position: absolute;
+  width: calc((225px * 3) + (20px * 4) + 2px);
+  height: 60px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap .button {
+  display: block;
+  float: left;
+  width: 225px;
+  height: 60px;
+  text-align: center;
+  line-height: 3.85;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 50px;
+  color: black;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.wrap .button a {
+  color: black;
+  text-decoration: none;
+}
+.wrap .button .fa {
+  margin-right: 6px;
+}
+.wrap .button:hover {
+  transform: scale(1.1);
+	background: #FF1493;
+	border-color: #FF1493;
+}
+
+@media only screen and (max-width: 719px) {
+  .button {
+    float: none !important;
+    margin: none;
+    margin-top: 25px;
+  }
+
+  .wrap {
+    width: auto;
+    height: auto;
+  }
+}
+
+.pageoverlay {
+    display: block;
+    height: 95%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.lightbox {
+    color: #FFFFFF;
+    margin: 17% auto;
+}
+
+.awrapper {
+    align-content: center;
+    background-size: cover;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100%;
+    ms-flex-direction: row;
+    ms-flex-line-pack: center;
+    ms-flex-pack: center;
+    ms-flex-wrap: wrap;
+    webkit-align-content: center;
+    webkit-flex-direction: row;
+    webkit-flex-wrap: wrap;
+    webkit-justify-content: center;
+}
+/* unvisited link */
+a:link {
+    color: #FF1493;
+}
+
+/* visited link */
+a:visited {
+    color: #FF1493;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF1493;
+}
+
+/* selected link */
+a:active {
+    color: #FF1493;
+}
