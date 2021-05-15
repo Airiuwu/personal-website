@@ -31,7 +31,7 @@
          <script>
             function renderTime() {
             var currentTime = new Date();
-            var diem = "am";
+            var diem = "AM";
             var h = currentTime.getHours();
             var m = currentTime.getMinutes();
             var s = currentTime.getSeconds();
@@ -40,7 +40,7 @@
             	h = 12;
             } else if (h > 12) { 
             	h = h - 12;
-            	diem="pm";
+            	diem="PM";
             }
             if (h < 10) {
             	h = "0" + h;
