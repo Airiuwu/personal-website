@@ -1,2 +1,2 @@
-# airi.cf
+# adowobe.xyz
 idk
