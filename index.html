@@ -19,6 +19,9 @@
    <body onmousedown="return false" onselectstart="return false" oncontextmenu="return false">
       <div class="pageoverlay">
       <div class="lightbox">
+      <div id="pic" class="avatar">
+        <img id="image" class="animated zoomIn" src="" style="position: absolute;top: 20%;left: 50%;transform: translate(-50%, -50%);border: 3px solid #d510ac;animation-delay: 1s;border-radius: 50%;">
+      </div>  
       <div class="awrapper">
          <div class="animated zoomIn" style="animation-delay: 1s;">
             <h1><font color="#FFFFFF">Ad</font><font color="#ff00cc">obe</font><font color="#FFFFFF"></font></h1>
@@ -105,7 +108,7 @@
                  }
                  // "F12" key
                  if (event.keyCode == 123) {
-                     disabledEvent(e);
+                    disabledEvent(e);
                  }
              }, false);
              function disabledEvent(e) {
@@ -118,5 +121,62 @@
                  return false;
              }
          }
+        var myimages = [{
+          image: "https://a.kurikku.pw/4168",
+          probability: 0.25
+        }, {
+          image: "https://a.denopia.ml/1049",
+          probability: 0.25
+        }, {
+          image: "https://a.gatari.pw/17126?74163",
+          probability: 0.25
+        }, {
+          image: "https://a.ussr.pl/1085",
+          probability: 0.25
+        }, {
+          image: "https://a.akatsuki.pw/36028",
+          probability: 0.25
+        }, {
+        }, {
+          image: "https://a.rina.place/1240",
+          probability: 0.25
+        }, {
+        }, {
+          image: "https://a.fumosu.pw/6",
+          probability: 0.25
+        }, {
+        }, {
+          image: "https://a.datenshi.pw/1406",
+          probability: 0.25
+        }, {
+        }, {
+          image: "https://a.cripple.moe/1044",
+          probability: 0.25
+        }, {
+        }, {
+          image: "https://a.lemres.de/1521",
+          probability: 0.25
+        }, {
+        }, {
+          image: "https://a.ez-pp.farm/1065",
+          probability: 0.25
+        }, {
+        }];
+
+        function getImage() {
+          var rand = Math.random();
+          var probabilitiy_sum = 0;
+          for (var i = 0; i < myimages.length; i++) {
+            probabilitiy_sum += myimages[i].probability;
+            if (rand <= probabilitiy_sum) {
+              return myimages[i].image;
+            }
+          }
+          return myimages[myimages.length].image;
+        }
+
+        for (var i = 0; i < 1; i++) {
+          document.getElementById("image").src = getImage() // <-- here
+        }
       </script>
 </html>

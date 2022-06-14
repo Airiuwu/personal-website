@@ -133,6 +133,7 @@ h1>a {
     webkit-flex-wrap: wrap;
     webkit-justify-content: center;
 }
+
 /* unvisited link */
 a:link {
     color: #FF1493;
