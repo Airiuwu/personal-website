@@ -20,7 +20,7 @@
       <div class="pageoverlay">
       <div class="lightbox">
       <div id="pic" class="avatar">
-        <img id="image" class="ava" src="" style="position: absolute;top: 15%;left: 50%;transform: translate(-50%, -50%);border: 3px solid #d510ac;">
+        <img id="image" class="animated zoomIn" src="" style="position: absolute;top: 15%;left: 50%;transform: translate(-50%, -50%);border: 3px solid #d510ac;animation-delay: 1s;">
       </div>  
       <div class="awrapper">
          <div class="animated zoomIn" style="animation-delay: 1s;">
@@ -107,9 +107,9 @@
                      disabledEvent(e);
                  }
                  // "F12" key
-                 if (event.keyCode == 123) {
-                     disabledEvent(e);
-                 }
+                 //if (event.keyCode == 123) {
+                    // disabledEvent(e);
+                 //}
              }, false);
              function disabledEvent(e) {
                  if (e.stopPropagation) {
