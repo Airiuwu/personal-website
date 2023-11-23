@@ -1,21 +1,11 @@
-@font-face { font-family: Font; src: url('../font/font.ttf'); }
-* {
-  margin: 0;
-  padding: 0;
-}
-
-#clockDisplay {
-    position: relative;
-}
-
 body {
   background: black;
-  font-family: "Open Sans", sans-serif;
   overflow: hidden;
+  font-family: Ubuntu;
 }
 
 h1 {
-	font-family: Font;
+	font-family: Ubuntu;
 	font-size: 12.0vw;
     font-weight: 400;
     margin: 0;
@@ -134,22 +124,29 @@ h1>a {
     webkit-justify-content: center;
 }
 
-/* unvisited link */
 a:link {
     color: #FF1493;
 }
 
-/* visited link */
 a:visited {
     color: #FF1493;
 }
 
-/* mouse over link */
 a:hover {
     color: #FF1493;
 }
 
-/* selected link */
 a:active {
     color: #FF1493;
+}
+
+.me {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #d510ac;
+  animation-delay: 1s;
+  border-radius: 50%;
+  width: 300px;
 }
