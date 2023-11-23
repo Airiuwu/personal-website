@@ -6,11 +6,11 @@
       <title>Adobe</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" type="image/png" href="favicon.ico"/>
-      <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Ubuntu'>
       <link rel='stylesheet prefetch' href='maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-      <link rel="stylesheet" href="css/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
       <link href="css/animate.css" rel="stylesheet">
       <link href="css/stars.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
    </head>
    <div class="bg-animation">
       <div id="stars2"></div>
@@ -19,47 +19,13 @@
    <body onmousedown="return false" onselectstart="return false" oncontextmenu="return false">
       <div class="pageoverlay">
       <div class="lightbox">
-      <div id="pic" class="avatar">
-        <img id="image" class="animated zoomIn" src="" style="position: absolute;top: 20%;left: 50%;transform: translate(-50%, -50%);border: 3px solid #d510ac;animation-delay: 1s;border-radius: 50%;">
-      </div>  
+      <div id="img" class="avatar">
+         <img class="me" src="https://avatars.githubusercontent.com/u/61052022?v=4" alt="Adobe">
+      </div>
       <div class="awrapper">
          <div class="animated zoomIn" style="animation-delay: 1s;">
-            <h1><font color="#FFFFFF">Ad</font><font color="#ff00cc">obe</font><font color="#FFFFFF"></font></h1>
+            <h1><font color="#ff00cc">Adobe</font><font color="#FFFFFF"></font></h1>
          </div>
-      </div>
-      <div class="animated fadeInUp">
-         <center>
-            <div id="clockDisplay" class="clockStyle"></div>
-         </center>
-         <script>
-            function renderTime() {
-            var currentTime = new Date();
-            var diem = "AM";
-            var h = currentTime.getHours();
-            var m = currentTime.getMinutes();
-            var s = currentTime.getSeconds();
-            setTimeout('renderTime()',1000);
-            if (h == 0) {
-            	h = 12;
-            } else if (h > 12) { 
-            	h = h - 12;
-            	diem="PM";
-            }
-            if (h < 10) {
-            	h = "0" + h;
-            }
-            if (m < 10) {
-            	m = "0" + m;
-            }
-            if (s < 10) {
-            	s = "0" + s;
-            }
-            var myClock = document.getElementById('clockDisplay');
-            myClock.textContent = h + ":" + m + ":" + s + " " + diem;
-            myClock.innerText = h + ":" + m + ":" + s + " " + diem;
-            }
-            renderTime();
-         </script>		
       </div>
       <div class='hidden_overlay'></div>
       <div class="wrap" style="animation-delay: 6s;">
@@ -76,100 +42,12 @@
       </span>
       </a>
       </a>
-      <a href='https://heia.kim' target='_blank'>
+      <a href='https://osu.ppy.sh/users/13018678' target='_blank'>
       <span class='button'>
       <span class='fa fa-shop'></span>
-      heia.kim
+      osu!
       </span>
       </a>
       <a href="#" onClick="goSomewhere(); return false;">
-      <script language="JavaScript">
-         window.onload = function () {
-             document.addEventListener("contextmenu", function (e) {
-                 e.preventDefault();
-             }, false);
-             document.addEventListener("keydown", function (e) {
-                 //document.onkeydown = function(e) {
-                 // "I" key
-                 if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                     disabledEvent(e);
-                 }
-                 // "J" key
-                 if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                     disabledEvent(e);
-                 }
-                 // "S" key + macOS
-                 if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-                     disabledEvent(e);
-                 }
-                 // "U" key
-                 if (e.ctrlKey && e.keyCode == 85) {
-                     disabledEvent(e);
-                 }
-                 // "F12" key
-                 if (event.keyCode == 123) {
-                    disabledEvent(e);
-                 }
-             }, false);
-             function disabledEvent(e) {
-                 if (e.stopPropagation) {
-                     e.stopPropagation();
-                 } else if (window.event) {
-                     window.event.cancelBubble = true;
-                 }
-                 e.preventDefault();
-                 return false;
-             }
-         }
-        var myimages = [{
-          image: "https://a.heia.kim/269",
-          probability: 0.25
-        }, {
-          image: "https://a.gatari.pw/17126?74163",
-          probability: 0.25
-        }, {
-          image: "https://a.ussr.pl/1085",
-          probability: 0.25
-        }, {
-          image: "https://a.akatsuki.pw/36028",
-          probability: 0.25
-        }, {
-        }, {
-          image: "https://a.rina.place/1240",
-          probability: 0.25
-        }, {
-        }, {
-          image: "https://a.fumosu.pw/6",
-          probability: 0.25
-        }, {
-        }, {
-          image: "https://a.datenshi.pw/1406",
-          probability: 0.25
-        }, {
-        }, {
-          image: "https://a.lemres.de/1521",
-          probability: 0.25
-        }, {
-        }, {
-          image: "https://a.ez-pp.farm/1065",
-          probability: 0.25
-        }, {
-        }];
-
-        function getImage() {
-          var rand = Math.random();
-          var probabilitiy_sum = 0;
-          for (var i = 0; i < myimages.length; i++) {
-            probabilitiy_sum += myimages[i].probability;
-            if (rand <= probabilitiy_sum) {
-              return myimages[i].image;
-            }
-          }
-          return myimages[myimages.length].image;
-        }
-
-        for (var i = 0; i < 1; i++) {
-          document.getElementById("image").src = getImage() // <-- here
-        }
       </script>
 </html>
