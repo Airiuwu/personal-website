@@ -2297,7 +2297,7 @@
     -webkit-animation-name: rollOut;
     animation-name: rollOut
 }
-@-webkit-keyframes zoomIn {
+@-webkit-keyframes zoom-in {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.3, .3, .3);
@@ -2307,7 +2307,7 @@
         opacity: 1
     }
 }
-@keyframes zoomIn {
+@keyframes zoom-in {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.3, .3, .3);
@@ -2317,11 +2317,11 @@
         opacity: 1
     }
 }
-.zoomIn {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn
+.zoom-in {
+    -webkit-animation-name: zoom-in;
+    animation-name: zoom-in
 }
-@-webkit-keyframes zoomInDown {
+@-webkit-keyframes zoom-inDown {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
@@ -2337,7 +2337,7 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-@keyframes zoomInDown {
+@keyframes zoom-inDown {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
@@ -2353,11 +2353,11 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-.zoomInDown {
-    -webkit-animation-name: zoomInDown;
-    animation-name: zoomInDown
+.zoom-inDown {
+    -webkit-animation-name: zoom-inDown;
+    animation-name: zoom-inDown
 }
-@-webkit-keyframes zoomInLeft {
+@-webkit-keyframes zoom-inLeft {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
@@ -2373,7 +2373,7 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-@keyframes zoomInLeft {
+@keyframes zoom-inLeft {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
@@ -2389,11 +2389,11 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-.zoomInLeft {
-    -webkit-animation-name: zoomInLeft;
-    animation-name: zoomInLeft
+.zoom-inLeft {
+    -webkit-animation-name: zoom-inLeft;
+    animation-name: zoom-inLeft
 }
-@-webkit-keyframes zoomInRight {
+@-webkit-keyframes zoom-inRight {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
@@ -2409,7 +2409,7 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-@keyframes zoomInRight {
+@keyframes zoom-inRight {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
@@ -2425,11 +2425,11 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-.zoomInRight {
-    -webkit-animation-name: zoomInRight;
-    animation-name: zoomInRight
+.zoom-inRight {
+    -webkit-animation-name: zoom-inRight;
+    animation-name: zoom-inRight
 }
-@-webkit-keyframes zoomInUp {
+@-webkit-keyframes zoom-inUp {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
@@ -2445,7 +2445,7 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-@keyframes zoomInUp {
+@keyframes zoom-inUp {
     from {
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
@@ -2461,9 +2461,9 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1)
     }
 }
-.zoomInUp {
-    -webkit-animation-name: zoomInUp;
-    animation-name: zoomInUp
+.zoom-inUp {
+    -webkit-animation-name: zoom-inUp;
+    animation-name: zoom-inUp
 }
 @-webkit-keyframes zoomOut {
     from {
