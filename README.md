@@ -1,2 +1,1 @@
-# adowobe.xyz
-idk
+
